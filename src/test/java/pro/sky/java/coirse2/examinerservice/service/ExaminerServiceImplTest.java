@@ -5,6 +5,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import pro.sky.java.coirse2.examinerservice.domain.Question;
+import pro.sky.java.coirse2.examinerservice.repository.QuestionRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static pro.sky.java.coirse2.examinerservice.constants.ExaminerServiceConstants.*;
@@ -12,4 +14,5 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class ExaminerServiceImplTest {
+
 }

@@ -8,7 +8,7 @@ import java.util.Set;
 public class ExaminerServiceConstants {
     public static final String QUESTION = "Вопрос?";
     public static final String ANSWER = "Ответ";
-    public static final Question CORRECT_QUESTION = new Question(QUESTION, ANSWER);
+    public static final Question FULL_QUESTION = new Question(QUESTION, ANSWER);
     public static final Collection<Question> CORRECT_COLLECTION = Set.of();
 
 }

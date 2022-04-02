@@ -6,23 +6,21 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import pro.sky.java.coirse2.examinerservice.domain.Question;
-import pro.sky.java.coirse2.examinerservice.exception.TheQuestionWasNotFound;
 import pro.sky.java.coirse2.examinerservice.repository.QuestionRepository;
 
-import java.util.Collection;
-
-import static org.mockito.Mockito.*;
-import static pro.sky.java.coirse2.examinerservice.constants.ExaminerServiceConstants.*;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
+import static pro.sky.java.coirse2.examinerservice.constants.ExaminerServiceConstants.*;
+import static pro.sky.java.coirse2.examinerservice.constants.ExaminerServiceConstants.CORRECT_COLLECTION;
 
 @ExtendWith(MockitoExtension.class)
-class JavaQuestionServiceTest {
+class MathQuestionServiceTest {
 
     @Mock
     private QuestionRepository questionRepository;
 
     @InjectMocks
-    private JavaQuestionService out;
+    private MathQuestionService out;
 
     @Test
     public void add() {
